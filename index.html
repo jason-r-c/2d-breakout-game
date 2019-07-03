@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            html {
+                background-image: url("break-splash.png");
+                background-repeat: no-repeat;
+                   background-size: 100%;
+            }
+
+            button {
+                background: black;
+                border: none;
+                border-radius: 5px;
+                color: white;
+                padding: 20px;
+                font-size: 30px;
+                font-family: fantasy;
+                margin-top: 20px;
+                margin-left: 50px;
+            }
+
+            @media screen and (max-width : 900px) {
+                button {
+                    font-size: 12px;
+                    margin: 0;
+                    padding: 10px;
+                }
+
+            }
+        </style>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div style="text-align: center;">
+            <button id="loadBreakout">Load Classic Breakout</button>
+            <button id="loadChristmasBreakout">Load Christmas Breakout</button>
+        </div>
+        <script>
+
+            document.getElementById('loadBreakout').addEventListener('click', function() {
+                console.log('// handler clicked');
+                window.location.href = 'breakout/index.html'; //relative to domain
+            }); 
+
+            document.getElementById('loadChristmasBreakout').addEventListener('click', function() {
+                console.log('// handler clicked');
+                window.location.href = '2d-breakout-game-xmas-breakout/index.html'; //relative to domain
+            }); 
+
+            function loadGame() {
+                window.location.href = '/path'; //relative to domain
+            }
+        </script>
+    </body>
+</html>
