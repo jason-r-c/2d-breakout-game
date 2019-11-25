@@ -44,18 +44,12 @@
         <![endif]-->
         <div style="text-align: center;">
             <button id="loadBreakout">Load Classic Breakout</button>
-            <button id="loadChristmasBreakout">Load Christmas Breakout</button>
         </div>
         <script>
 
             document.getElementById('loadBreakout').addEventListener('click', function() {
                 console.log('// handler clicked');
-                window.location.href = 'breakout/index.html'; //relative to domain
-            }); 
-
-            document.getElementById('loadChristmasBreakout').addEventListener('click', function() {
-                console.log('// handler clicked');
-                window.location.href = '2d-breakout-game-xmas-breakout/index.html'; //relative to domain
+                window.location.href = 'classic-breakout/index.html'; //relative to domain
             }); 
 
             function loadGame() {
